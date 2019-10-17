@@ -5,12 +5,12 @@ for (let li of tree.querySelectorAll('li')) {
 
     tree.onclick = (event) => {
         if (event.target.tagName != 'SPAN') {
-            return
+            return;
         }
 
         let childStore = event.target.parentNode.querySelector('ul');
         if (!childStore) {
-            return
+            return;
         }
 
         childStore.hidden = !childStore.hidden;
